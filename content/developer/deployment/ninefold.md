@@ -5,7 +5,7 @@ section: deployment
 
 ## Overview
 
-This guide will walk you through deploying your Spree application with Ninefold.
+This guide will walk you through deploying your Spree application with [Ninefold](http://ninefold.com).
 
 This guide, like the others, assumes your app is in a 'ready-to-deploy' state and that your code is available in a hosted Git repository.  Ninefold requires access to this repository in order to deploy your application. 
 
@@ -13,7 +13,7 @@ This guide, like the others, assumes your app is in a 'ready-to-deploy' state an
 
 ### Create a Ninefold account
 
-Sign up with a username, your email address, and a password.
+[Sign up](http://ninefold.com) with a username, your email address, and a password.
 
 ## Deployment
 
@@ -21,7 +21,7 @@ Once you've signed up, click the blue "Deploy now" button. This starts the deplo
 
 ### Step 1. Deploy app
 
-In this step, choose your hosted Git repository. Ninefold pulls your code in from Github.com, Bitbucket.com, or from your private Git URL. 
+In this step, choose your hosted Git repository. Ninefold pulls your code in from [Github](http://github.com), [Bitbucket](http://bitbucket.com), or from your private Git URL. 
 
 Sign in with your credentials for the repository and grant Ninefold permission to view your repository listings.
 
@@ -33,7 +33,7 @@ Skip down to step 3 if you've chosen the Git URL option.
 
 ### Step 2. Specify your repository
 
-Choose the correct account, your Spree repository, and the master branch.
+Choose the correct account, your Spree repository, and the branch you want to deploy from (this defaults to master).
 
 Uncheck the box if you do not wish to have Ninefold automatically redeploy your app for every code revision.
 
@@ -41,15 +41,17 @@ Click Next.
 
 ### Step 3. Choose your architecture
 
-Here, you will need to choose the correct architecture for your Spree application. Please consult the [Deployment options](http://guides.spreecommerce.com/developer/deployment_options.html) guide for RAM requirements. 
+Here, you will choose the correct architecture for your Spree application. Please consult the [Deployment options](http://guides.spreecommerce.com/developer/deployment_options.html) guide for RAM requirements. 
 
 If you have set up your Spree application to use Redis for background work, our recommendation is to click "Create a dedicated worker server."
+
+Click Next.
 
 ### Step 4. Configuration: Your app is now ready to be deployed
 
 This step allows you to configure different settings for your Spree application.
 
-Environment variables, such as S3 keys, should be pasted into this section.
+Environment variables, such as S3 credentials, should be pasted into this section.
 
 Add-ons such as Memcached, New Relic, and SendGrid can be chosen if you require them.
 
